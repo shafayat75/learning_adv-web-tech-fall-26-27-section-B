@@ -8,6 +8,7 @@ import { AppService } from '@/src/app.service';
 import global_config from '@/config/global_config';
 
 import { ProductModule } from './modules/product/product.module';
+import { EmployeeModule } from './modules/employee/employee.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { ProductModule } from './modules/product/product.module';
     }),
 
     ProductModule,
+    EmployeeModule,
   ],
 
   controllers: [AppController],
